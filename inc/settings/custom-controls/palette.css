@@ -1,0 +1,48 @@
+.palette_js .add_color { display: inline-block; }
+.palette_js .change_color { display: none; }
+
+.palette_js .action.reset { float: right; }
+
+.palette_js .action { padding: 3px; vertical-align: bottom; cursor: pointer; }
+
+.palette_js input[type=color] { width: 50px; }
+
+.palette_js input[type=color] { height: 28px; }
+
+.palette_js.seleccion .change_color { display: inline-block; }
+
+.palette_js .palette_colors { margin-top: 5px; }
+
+.palette_js .palette_colors .color {
+    cursor: pointer;
+    border: 1px solid #f0f8ff;
+    float: left;
+    margin: 1px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 2px 3px;
+    text-shadow: 0px 0px white;
+}
+
+.palette_js .color.selected {
+    box-shadow: 0px 0px 3px black;
+}
+
+.palette_js .color.selected:hover {
+    border-color: #555;
+}
+
+.palette_js .palette_colors .color .delete {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    z-index: 10;
+    display: none;
+    color: black;
+    background: white;
+}
+
+.palette_js .palette_colors .color:hover .delete {
+    display: initial;
+}
